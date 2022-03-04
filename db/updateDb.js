@@ -23,7 +23,7 @@ async function fetchRandomImageURL() {
   const data = await response.text();
   const imageURL =
     data.match(/https:\/\/i\.imgur\.com\/.{1,10}\.(?:png|jpg|jpeg)/m)?.[0] ||
-    data.match(/https:\/\/image\.prntscr\.com\/image\/.{1,50}\.(?:png|jpg|jpeg)/m)?.[0] ||
+    // data.match(/https:\/\/image\.prntscr\.com\/image\/.{1,50}\.(?:png|jpg|jpeg)/m)?.[0] ||
     null;
 
   if (imageURL !== null) {
